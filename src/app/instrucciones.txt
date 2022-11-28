@@ -1,0 +1,2 @@
+Para crear un nuevo componente usar
+ng g c Components/EL NOMBRE DE SU COMPONENTE OKEY PERROS Y YA 
