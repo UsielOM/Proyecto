@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FootBarComponent } from './Components/foot-bar/foot-bar.component';
+import { BienvenidaComponent } from './Components/bienvenida/bienvenida.component';
 
 
 
@@ -13,6 +14,7 @@ import { FootBarComponent } from './Components/foot-bar/foot-bar.component';
     AppComponent,
     NavbarComponent,
     FootBarComponent,
+    BienvenidaComponent
   
   ],
   imports: [
