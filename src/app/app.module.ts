@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FootBarComponent } from './Components/foot-bar/foot-bar.component';
 import { BienvenidaComponent } from './Components/bienvenida/bienvenida.component';
+import { RegistroComponent } from './Components/registro/registro.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 
@@ -14,12 +17,16 @@ import { BienvenidaComponent } from './Components/bienvenida/bienvenida.componen
     AppComponent,
     NavbarComponent,
     FootBarComponent,
-    BienvenidaComponent
+    BienvenidaComponent,
+    RegistroComponent
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
