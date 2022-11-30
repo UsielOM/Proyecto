@@ -22,7 +22,7 @@
         <form action="user" autocomplete="off" [formGroup]="form">
             <br>
             <label for="Name">Nombres</label>
-            <input type="text" id="Name" name="Name" formControlName="Nombre" [(ngModel)]="reg.Nombre" />
+            <input type="text" id="Nombre" name="Nombre" formControlName="Nombre" [(ngModel)]="reg.Nombre" />
             <br>
             <br>
             <label for="Name">Apellido Paterno</label>
@@ -46,7 +46,7 @@
             <br>
             <br>
             <label for="Name">Area De Trabajo</label>
-            <select name="Area" id="Area" formControlName="AreaDeTrabajo" [(ngModel)]="reg.AreaDeTrabajo">
+            <select name="Area" id="AreaDeTrabajo" formControlName="AreaDeTrabajo" [(ngModel)]="reg.AreaDeTrabajo">
                     
                     <option>---Seleccione una Área---</option>
         
@@ -66,7 +66,7 @@
 
             <div class="col">
                 <label for="fecha">Fecha De Ingreso</label>
-                <input type="month" name="fecha" id="fecha" class="form-control" formControlName="FechaDeIngreso" [(ngModel)]="reg.FechaDeIngreso">
+                <input type="month" name="FechaDeIngreso" id="FechaDeIngreso" class="form-control" formControlName="FechaDeIngreso" [(ngModel)]="reg.FechaDeIngreso">
             </div>
             <button type="button" class="btn btn-primary btn-lg" id="guardar" (click)="registroUsuarios()">GENERAR REGISTRO </button>
         </form>

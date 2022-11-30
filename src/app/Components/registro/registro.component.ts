@@ -29,14 +29,14 @@ reg: Registro = new Registro();
 
 formulario(){
   this.form= this.fb.group({
-    Name:['',Validators.required],
+    Nombre:['',Validators.required],
     ApellidoP:['',Validators.required],
     ApellidoM:['',Validators.required],
     Correo:['',[Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')]],
     Telefono:['',Validators.required],
     Matricula:['',Validators.required],
-    Area:['',Validators.required],
-    fecha:['',Validators.required]
+    AreaDeTrabajo:['',Validators.required],
+    FechaDeIngreso:['',Validators.required]
   })
 }
   ngOnInit(): void {
