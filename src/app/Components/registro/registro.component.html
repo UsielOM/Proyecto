@@ -3,82 +3,88 @@
     <body>
 
         <div class="head">
-    
-            
-            </div>
-    
-            <nav class="navbar">
-                <img src="tesla.png" width="150" height="150"  />
-                 <h1>TESLA</h1>
-    
-                 <h1>CYBER INFORMACIÓN</h1>
-                 
-    
-                 <h3>REGISTRO DE INFORMACION DEL USUARIO</h3>
-                 
-                
-            </nav>
-            
-                <br>
+
+
+        </div>
+
+        <nav class="navbar">
+            <img src="tesla.png" width="150" height="150" />
+            <h1>TESLA</h1>
+
+            <h1>CYBER INFORMACIÓN</h1>
+
+
+            <h3>REGISTRO DE INFORMACION DEL USUARIO</h3>
+
+
+        </nav>
+
+        <form action="user" autocomplete="off" [formGroup]="form">
+            <br>
             <label for="Name">Nombres</label>
-            <input type="text" id="Name" [] name="Name" />
+            <input type="text" id="Name" name="Name" formControlName="Nombre" [(ngModel)]="reg.Nombre" />
             <br>
             <br>
             <label for="Name">Apellido Paterno</label>
-            <input type="text" id="Name" name="Name" />
+            <input type="text" id="ApellidoP" name="ApellidoP" formControlName="ApellidoP" [(ngModel)]="reg.ApellidoP" />
             <br>
             <br>
             <label for="Name">Apellido Materno</label>
-            <input type="text" id="Name" name="Name" />
+            <input type="text" id="ApellidoM" name="ApellidoM" formControlName="ApellidoM" [(ngModel)]="reg.ApellidoM" />
             <br>
             <br>
             <label for="Name">Correo Electronico</label>
-            <input type="text" id="Name" name="Name" />
+            <input type="email" id="Correo" name="Correo" formControlName="Correo" [(ngModel)]="reg.Correo" />
             <br>
             <br>
             <label for="Name">Telefono</label>
-            <input type="number" id="Name" name="Name" />
+            <input type="number" id="Telefono" name="Telefono" formControlName="Telefono" [(ngModel)]="reg.Telefono" />
             <br>
             <br>
             <label for="Name">Matricula</label>
-            <input type="number" id="Name" name="Name" />
+            <input type="number" id="Matricula" name="Matricula" formControlName="Matricula" [(ngModel)]="reg.Matricula" />
             <br>
             <br>
             <label for="Name">Area De Trabajo</label>
-            <select name="Area">
-                
-                <option>---Seleccione una Área---</option>
-    
-                <option>Fabricación</option>
-                
-                <option>Equipo Cell</option>
-                
-                <option>IA del Piloto Auntomático</option>
-                
-                <option>Finanzas</option>
-    
-                <option>HR</option>
-    
-                </select>
-                <br>
-                <br>
-    
-    
-                <form action="" method="POST" class="form-row mb-4">
+            <select name="Area" id="Area" formControlName="AreaDeTrabajo" [(ngModel)]="reg.AreaDeTrabajo">
+                    
+                    <option>---Seleccione una Área---</option>
+        
+                    <option>Fabricación</option>
+                    
+                    <option>Equipo Cell</option>
+                    
+                    <option>IA del Piloto Auntomático</option>
+                    
+                    <option>Finanzas</option>
+        
+                    <option>HR</option>
+        
+                    </select>
+            <br>
+            <br>
+
+            <div class="col">
+                <label for="fecha">Fecha De Ingreso</label>
+                <input type="month" name="fecha" id="fecha" class="form-control" formControlName="FechaDeIngreso" [(ngModel)]="reg.FechaDeIngreso">
+            </div>
+            <button type="button" class="btn btn-primary btn-lg" id="guardar" (click)="registroUsuarios()">GENERAR REGISTRO </button>
+        </form>
+        <!-- <form action="" method="POST" class="form-row mb-4">
                     <div class="col">
                         <label for="fecha">Fecha De Ingreso</label>
                         <input type="month" name="fecha" id="fecha" class="form-control" >
                     </div>
-                </form>
-    
-                <br>
-                <br>
-    
-           
-            
-                <button type="button" class="button button2">Guardar Mi Información</button>
-                
-                
+                </form> -->
+
+        <br>
+        <br>
+
+
+
+
+
+
     </body>
 
 
